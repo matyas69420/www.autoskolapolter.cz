@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="cs">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel= "stylesheet" href="https://api-ssps.cajthaml.eu/file/global/css/reset_ld9mrCCm.css">
+        <script src="https://kit.fontawesome.com/02fede9076.js" crossorigin="anonymous"></script>
+    </head>
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+        body{
+            background-color: rgb(238, 236, 236);
+            width: 100%;
+            
+            padding-top: 60px;
+        }
+        .center{
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            flex-direction: column;
+        }
+        a{
+            text-decoration: none;
+        }
+        .container{
+            height: 800px;
+            width: 80%;
+            max-width: 100%;
+            display: flex;
+            justify-content: center;
+            border-radius: 20px;
+            box-shadow:0 0 20px ;
+            background-image: url(https://r4.wallpaperflare.com/wallpaper/300/848/957/ultrawide-snow-forest-road-wallpaper-2f75824cde268ccbf53c981291d1a4a4.jpg);
+            background-position: bottom;
+        }
+        
+        div{
+            display: flex;  
+            flex-direction: column; 
+            align-items: center;
+        }
+        header{
+            padding-top: 40px;
+            height:70px;
+                     
+        }
+        h2{
+            font-family: 'Roboto', sans-serif;
+            font-weight:500;
+            font-size: 30px ;
+            text-align: center;
+            color: white;
+            text-shadow: 0 0 20px rgb(53, 51, 51);
+        }
+        .learner{
+            background-color: rgb(0,165,216);
+            padding-right: 5px;
+            padding-left:5px;
+        }
+        ul {
+            display: flex;
+            text-align: center;
+            background-color: rgba(109, 109, 109, 0.5); 
+            max-width: 200%;  
+        }
+        li {
+            display: inline;
+            padding: 20px;
+        }
+        li:first-child{
+            background-color: rgba(48, 48, 48, 0.5);  
+        }
+        li:hover{
+            background-color: rgba(59, 59, 59, 0.5);  
+        }
+        li>a {
+            color: white;
+            font-family: 'Roboto', sans-serif;
+        }  
+        .info{
+            margin: 75px;
+            width: 60%;
+            height: 230px;
+            background-color: rgba(109, 109, 109, 0.5);  
+            border-radius: 10px;     
+        }
+        h1{
+            font-size: 48px;
+            color: rgb(0,165,216);
+            font-family: 'Roboto', sans-serif;
+            text-align: center;
+            padding-top: 20px;
+            font-weight: 800;
+        }
+        .info>p{
+            color: white;
+            font-family: 'Roboto', sans-serif;
+            font-size: small;
+            font-weight: 400;
+            padding-left: 20px;
+            padding-top: 20px;
+            padding-right: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .sections-container {
+            display: flex;
+            flex-direction: row;
+            gap: 60px;
+        }
+        
+        .sections-container>section{
+            width: 260px;
+            height: 100px;
+            background-color: rgba(109, 109, 109, 0.5);
+            border-radius: 10px;
+            transition: transform 0.2s ease;
+            padding: 10px;
+        }
+        .sections-container>section:hover{
+            transform: translateY(-10px);
+            background-color: rgba(59, 59, 59, 0.5);
+        }
+        h3{
+            color: rgb(0,165,216);
+            font-family: 'Roboto', sans-serif;
+            font-size: 20px;
+            font-weight: bold ;
+            padding:10px;
+        }
+        .sections-container>section>p{
+            color: white;
+            font-family: 'Roboto', sans-serif;
+            font-size: small;
+            font-weight: 400; 
+            padding-left: 10px;
+            padding-bottom: 10px;
+        }
+        .icon{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            padding-top: 80px;
+            gap: 150px;
+            margin-bottom: 100px;
+        }
+        .icon>section{
+            width: 250px;
+        }
+        .icon>section>a{
+            display: flex;
+            justify-content: center;
+            color: black;
+        }
+        .icon>section>a:hover{
+            color: rgb(0,165,216);
+        }
+        h4{
+            color: rgb(0, 0, 0);
+            font-family: 'Roboto', sans-serif;
+            font-size: 20px;
+            font-weight: bold ;
+            padding-top: 20px;
+            text-align: center;
+            padding-bottom: 10px;
+        }
+        .icon>section>p{
+            text-align: center;
+            font-family: 'Roboto', sans-serif;
+            font-size: small;
+            font-weight: 400; 
+        }
+        .container2{
+            margin-left: 10%;
+            width: 80%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding-bottom: 100px;
+        }
+        img{
+            height: 500px;
+            width: fit-content;
+            box-shadow:0 0 20px ;
+            border-radius: 20px;
+        }
+        .aboutus{
+            padding-left: 100px;
+        }
+        h5{
+            color: rgb(0,165,216);
+            font-family: 'Roboto', sans-serif;
+            font-size: 30px;
+            font-weight: bold ;
+            padding-bottom: 20px;
+        }
+        .aboutus>p{
+            color: black;
+            font-family: 'Roboto', sans-serif;
+            font-size: medium;
+            font-weight: 400;
+            padding-top: 20px;
+        }
+        footer{
+            width: 100%;
+            height: 100px;
+            border-top:2px rgb(0,165,216) solid;
+            background-color: rgba(109, 109, 109, 0.5);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 250px;
+        }
+        h6{
+            font-family: 'Roboto', sans-serif;
+            font-weight:500;
+            font-size: 30px;
+            color: white;
+            text-shadow: 0 0 20px rgb(53, 51, 51);
+        }
+        footer>section>a{
+            font-family: 'Roboto', sans-serif;
+            font-size: 20px;
+            font-weight: 400;
+            color: white;
+            text-shadow: 0 0 20px rgb(53, 51, 51);
+        }
+        footer>section>a:hover{
+            color: rgb(0,165,216);
+        }
+        .icons{
+            color: white;
+            text-shadow: 0 0 20px rgb(53, 51, 51);
+            display: flex;
+            gap: 40px;
+        }
+        i:hover{
+            color: rgb(0,165,216);
+        }
+        @media (max-width: 1400px) {
+            .info{
+                height: 260px;
+            }
+            .container2{
+                flex-direction: column;
+            }
+            .container2>article>h5{
+                padding-top: 50px;
+            }
+            
+        }
+        @media (max-width:1250px){
+            .info{
+                height: 280px;
+            }
+            footer{
+                gap:150px;
+            }
+            .sections-container {
+            gap: 30px;
+            padding:5%
+            }
+            .sections-container>section{
+                width:40%;
+            }
+            .icon{
+                gap:80px;
+            }
+        }
+        @media(max-width:1000px){
+            .container{
+                width: 85%;
+            }
+            .aboutus{
+                padding-left: 50px;
+                padding-right: 50px;
+            }
+            .icon{
+                gap:60px;
+            }
+            .sections-container>section{
+                height: 120px;
+            }
+            footer{
+                gap:75px;
+            }
+            .icons{
+                gap:20px;
+                font-size: 10px;
+            }
+            h6{
+                font-size: 20px;
+            }
+            footer>section>a{
+                font-size: 15px;
+            }
+            .info{
+                height: 320px;
+            }
+        }
+        @media(max-width:760px){
+            .container{
+                width: 90%;
+                height:900px;
+            }
+            img{
+                height: 400px;
+            }
+            .info{
+                height: 360px;
+            }
+        }
+        @media(max-width:620px){
+            li{
+                font-size: 10px;
+            }
+            img{
+                height: 300px;
+            }
+            footer{
+                gap: 40px;
+            }
+            h4{
+                font-size: 15px;
+            }
+            .icon>section>a{
+                font-size: 30px;
+            }
+        }
+        @media(max-width:550px){
+            .icon{
+                gap:20px;
+            }
+            h1{
+                font-size: 35px;
+            }
+            footer{
+                gap:25px;
+            }
+            .icons{
+                gap: 10px;
+            }
+        }
+        @media(max-width:500px){
+            h3{
+                font-size: 15px;
+            }
+            .sections-container>section>p{
+                font-size: 10px;
+            }
+            h1{
+                font-size: 30px;
+            }
+            .sections-container>section{
+                width: 80px;
+                height:100px;
+            }
+            h2{
+                font-size: 20px;
+            }
+            img{
+                height:250px;
+            }
+            .info>p{
+                font-size: 12px;
+            }
+            .info{
+                height:350px;
+            }
+            .container{
+                height:850px;
+            }
+            h6{
+                font-size: 15px;
+            }
+            .aboutus>p{
+                font-size: small;
+            }
+            li{
+                font-size: 7px;
+            }
+        }
+        @media(max-width:415px){
+            h3{
+                font-size: 12px;
+            }
+            .sections-container>section>p{
+                font-size: 8px;
+            }
+            .sections-container>section{
+                width: 65px;
+                height:90px;
+            }
+            .info>p{
+                font-size: 8px;
+            }
+            img{
+                height:200px;
+            }
+            h6{
+                font-size: 12px;
+            }
+            footer>section>a{
+                font-size: 9px;
+            }
+            .info{
+                height: 300px;
+            }
+            .container{
+                height:760px;
+            }
+            .aboutus>p{
+                font-size: smaller;
+            }
+            li{
+                font-size: 5px;
+            }
+        }
+    </style>
+    
+<body>    
+    <div class="center">    
+        <main class="container">
+            <div>   
+                <header>
+                    <h2>AUTOŠKO<span class="learner">L</span>A - POLTER</h2>
+                </header> 
+                <nav>
+                    <ul>
+                        <li><a href="uvod.html">ÚVOD</a></li>
+                        <li><a href="cenik.html">CENÍK</a></li>
+                        <li><a href="vozovypark.html">VOZOVÝ PARK</a></li>                
+                        <li><a href="kontakt.html">KONTAKT</a></li>
+                        <li><a href="login.html">PŘIHLÁŠKY</a></li>
+                    </ul>  
+                        
+                </nav>
+                <article class="info">
+                    <h1>AUTOŠKOLA POLTER PRAHA</h1>
+                        <p>Autoškola Jan Polter byla založena v roce 1993.
+                            Až do roku 2002 sídlila v Praze 8 - Na Palmovce, poté se přestěhovala do současného zázemí v Praze 8 -  Bohnicích.  Praxe v oboru 25 let.
+                        </p>    
+                        <p>    
+                            Velká úspěšnost při závěrečných zkouškách
+                        </p>    
+                        <p>    Naším cílem je nejen připravit žáky ke zdárnému zvládnutí zkoušek, ale především
+                            pro kvalitní a bezpečnou jízdu v silničním provozu nejen v Praze, ale i mimo Prahu.
+                        </p>
+                </article>
+                <div class="sections-container">
+                    <section>
+                        <h3>ŘIDIČSKÝ PRŮKAZ</h3>
+                        <p>Teoretická i praktická výuka pro získání řp</p>
+                        <p>AM, A1, A2, B</p>
+                    </section>
+                    <section>
+                        
+                        <h3>KONDIČNÍ JÍZDY</h3>
+                        <p>Pokud jste dlouho neřídili a chcete se bezpečně vrátit za volant</p>
+                        
+                    </section>
+                    <section>
+                        
+                        <h3>ŠKOLENÍ ŘIDIČŮ</h3>
+                        <p>Zákonem povinná školení řidičů referentů a školení řidičů z povolání</p>
+                        
+                    </section>
+                    
+                </div>
+            </div> 
+        </main> 
+    </div>    
+    <article class="icon">
+        <section>
+            <a href="login.html" class="fa-solid fa-user fa-3x"></a>
+            <a href="login.html">   
+                <h4>PŘIHLÁSIT SE</h4>
+            </a>
+            <p>Jak podat přihlášku do autoškoly</p> 
+        </section>
+        <section>
+            <a href="https://etesty2.mdcr.cz/" class="fa-solid fa-list-check fa-3x"></a>
+            <a href="https://etesty2.mdcr.cz/">
+                <h4>TESTOVÉ OTÁZKY MDČR</h4>
+            </a>
+            <p>Cvičná zkouška se skládá z 25 otázek, každá otázka má pouze jednu správnou odpověď</p>    
+        </section>
+        <section>
+            <a class="fa-solid fa-comment fa-3x"></a>
+            <h4>RECENZE</h4>
+            <p>Jak jsou naši zákazníci spokojeni s nabízenými službami</p>
+        </section>
+    </article>
+    <main class="container2">
+        <img src="https://cdn.pixabay.com/photo/2019/02/22/03/41/cat-4012806_1280.jpg"/>
+        <article class="aboutus">
+            <h5>AUTOŠKOLA POLTER PRAHA</h5>
+            <p>Autoškola Polter zaměstnává kvalifikované instruktory s bohatými zkušenostmi v oblasti řízení motorových vozidel. Tito instruktoři vám poskytnou nezbytné výukové lekce a rady, které vás připraví na bezpečnou a zodpovědnou jízdu.</p>
+            <p>Jednou z hlavních výhod Autoškoly Polter je flexibilita výuky. Autoškola si uvědomuje, že lidé mají různé rozvrhy a závazky, a proto nabízí možnosti výuky, které se přizpůsobí vašemu rozvrhu. Můžete si vybrat časy výuky, které vám nejlépe vyhovují, a dát si lekce v přiměřeném tempu.</p>
+            <p>Autoškola Praha také využívá moderní výukové metody a technologie. Nabízí interaktivní lekce, simulační cvičení a výukové materiály, které vám pomohou lépe porozumět pravidlům silničního provozu a zlepšit vaše dovednosti při řízení.</p>
+            <p>V neposlední řadě, Autoškola Praha disponuje moderními a dobře vybavenými vozidly, která jsou ideální pro výukové účely. Tyto vozy vám poskytnou pohodlí a bezpečí během výuky a přispějí k vašemu sebevědomí za volantem.</p>
+        </article>
+    </main>
+    <footer>
+        <section><h6>AUTOŠKO<span class="learner">L</span>A - POLTER</h6></section>
+        <section><a href="kontakty.html">KONTAKT</a></section>           
+        <section class="icons">
+            <i class="fa-brands fa-facebook fa-2x"></i>
+            <i class="fa-brands fa-twitter fa-2x"></i>
+            <i class="fa-brands fa-instagram fa-2x"></i>
+            <i class="fa-brands fa-youtube fa-2x"></i>
+        </section>    
+            
+    </footer>
+    
+</body>
+</html>
